@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{position: relative;}
+
+#container{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.quadrata{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.azzurra{
+    background-color: cyan;
+}
+
+.rossa{
+    background-color: red;
+}
+
+.laytrasp{
+    position: absolute;
+    z-index: -1;
+}
+
+.layopaco{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+}
+
+#riquadro-risultato .ris-trasp{
+    display: none;
+}
+
+.ris-visibile{
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    height: 200px;
+    width: 900px;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.calp-trasp{
+    display: none;
+}
+
+.calp-visibile{
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(50%, -50%);
+    color: red;
+    font-size: 2em;
+    opacity: 1;
+}
+
+#punti{
+    color: blueviolet;
+    text-align: center;
+}
+
+.compl-visibile{
+    text-align: center;
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(50%, -50%);
+    color: forestgreen;
+    font-size: 2em;
+    opacity: 1;
+}
+
